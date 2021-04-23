@@ -1,6 +1,46 @@
 body {
-  background-color: purple;
+  background-color: bisque;
 }
-body h1 {
-  background-color: red;
+body section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body section div {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+body section div h1 {
+  color: red;
+  font-size: 30px;
+}
+body section div p {
+  color: red;
+  font-size: 30px;
+  line-height: 30px;
+}
+body section div button {
+  background-color: bisque;
+  border: 3px solid red;
+  color: red;
+  border-radius: 5px;
+  font-size: 30px;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  position: relative;
+}
+body section div button img {
+  display: none;
+  position: absolute;
+  top: -650px;
+  left: -450px;
+}
+body section div button:hover img {
+  display: block;
 }

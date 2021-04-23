@@ -1,7 +1,50 @@
-body {
-     background-color: purple;
+$myColor : red;
+$myFontSize : 30px;
+$myBorderRadius: 5px;
 
-     h1 {
-          background-color: red;
+body {
+     background-color: bisque;
+     section {
+          height: 100vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          div {
+               flex-basis: 50%;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               margin-right: 10px;
+               h1 {
+                    color: $myColor;
+                    font-size: $myFontSize;
+               }
+               p {
+                    color: $myColor;
+                    font-size: $myFontSize;
+                    line-height: 30px;
+               }
+               button {
+                    background-color: bisque;
+                    border: 3px solid $myColor;
+                    color: $myColor;
+                    border-radius: $myBorderRadius;
+                    font-size: $myFontSize;
+                    width: 200px;
+                    height: 80px;
+                    text-align: center;
+                    position: relative;
+                    img {
+                         display: none;
+                         position: absolute;
+                         top: -650px;
+                         left: -450px;
+                    }
+               }
+               button:hover img {
+                    display: block;
+               }
+          }
      }
 }
